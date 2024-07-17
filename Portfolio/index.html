@@ -1,84 +1,293 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <link rel="stylesheet" href="./StyleSheet.css">
+  <title>Portfolio Website</title>
+  <link rel="stylesheet" href="./style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
-
 <body>
   <main class="MainContainer">
+    <!-- Header Section -->
     <header class="headerSection">
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-          <a style="font-size: 1.5rem; margin-left: 2%; font-weight: 500;" class="navbar-brand" href="#">PAWAN KUMAR</a>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Projects</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Resume</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+      <a href="" class="logo-section">Portfolio</a>
+      <nav class="navbar-container">
+        <a href="#Home">Home</a>
+        <a href="#About">About</a>
+        <a href="#Skills">Skills</a>
+        <a href="#Project">Projects</a>
+        <a href="#Home">Resume</a>
+        <a href="#Contact">Contact</a>
       </nav>
-      <div class="AboutSection">
-        <div class="textPart">
-          <main class="container">
-            <p>Hello 👋 I'm <br />
-              Pawan Kumar Arya</p>
-            <section class="animation">
-              <div class="first">
-                <div>Web Developer</div>
+    </header>
+    <!-- Home Section -->
+    <section id="Home" class="HomeSection">
+      <div class="HomePart">
+        <main class="textPart">
+          <p>Hello 👋 I'm <br />
+            Pawan Kumar Arya</p>
+          <section class="animation">
+            <div class="first">
+              <span>Web Developer</span>
+            </div>
+          </section>
+        </main>
+        <div class="bio-part">
+          A passionate Web Developer 🚀 having an Experience of an building Web and Web Application with
+          JavaScript/React/Node.js or React Native and some other cool libraries and frameworks.
+        </div>
+        <div class="socialCircle">
+          <a target="_blank" href="" class="logoAnchor">
+            <img class="logo" src="./github.svg" />
+          </a>
+          <a target="_blank" href="" class="logoAnchor">
+            <img class="logo" src="./instagram.svg" />
+          </a>
+          <a target="_blank" href="" class="logoAnchor">
+            <img class="logo" src="./telegram.svg" />
+          </a>
+          <a target="_blank" href="" class="logoAnchor">
+            <img class="logo" src="./twitter.svg" />
+          </a>
+        </div>
+        <div class="button-part">
+          <Link to="/about">
+          <button type="button" class="btn btn-warning btn-lg glow">CONTACT ME</button>
+          <a href="./resume.pdf">
+            <button type="button" class="btn btn-warning btn-lg glow">SEE MY RESUME</button>
+          </a>
+          </Link>
+        </div>
+      </div>
+      <div class="avatarPart">
+        <img src="./avatar.jpg" class="avatar" />
+      </div>
+    </section>
+
+    <!-- About Section -->
+
+    <section id="About" class="AboutSection">
+      <div class="about-img">
+        <img id="imagepart" src="./avatar.jpg" alt="">
+      </div>
+      <div class="about-text">
+        <h2>About <span>Me</span></h2>
+        <h4>Web Developer</h4>
+        <p>I am a Web developer with one years of professional experience specializing in web development, project
+          management and quality assurance testing. Adept at coordinating effectively with development teams, clients,
+          and non-technical stakeholders to execute complex web development projects. And proficient in front-end
+          technologies, including HTML5, CSS3, JavaScript, and various frameworks such as React, and Node.js. Skilled in
+          translating complex designs and requirements into fully functional websites and web applications. Strong
+          ability to optimize code for maximum speed and scalability. Excellent collaboration and communication skills,
+          working effectively with cross-functional teams to deliver projects on time and according to specifications.
+          Continuously learning and adapting to new technologies to enhance development efficiency and innovation.</p>
+        <a href="#" class="">
+          <button type="button" class="btn btn-warning btn-lg glow">More About Me</button>
+        </a>
+      </div>
+    </section>
+
+    <!-- Skill Section -->
+    <section id="Skills" class="SkillSection">
+      <div class="skill-container">
+        <div class="skill-part">
+          <h1>My <span>Skills</span></h1>
+        </div>
+        <div class="about-stats">
+          <div class="progress-bars">
+            <div class="progress-bar">
+              <p class="prog-title">html5</p>
+              <div class="progress-con">
+                <p class="prog-text">80%</p>
+                <div class="progress">
+                  <span style="width: 80%;" class="html"></span>
+                </div>
               </div>
-            </section>
-          </main>
-          <!-- <div class="socialCircle">
-            <a target="_blank" href="https://github.com/" class="logoAnchor"><img class="logo"
-                src="./github.svg"></img></a>
-            <a target="_blank" href="" class="logoAnchor"><img class="logo" src="./instagram.svg"></img></a>
-            <a target="_blank" href="" class="logoAnchor"><img class="logo" src="./telegram.svg"></img></a>
-            <a target="_blank" href="" class="logoAnchor"><img class="logo" src="./twitter.svg"></img></a>
-          </div> -->
-          <div class="aboutMe">
-            <Link to="/about"> <button  type="button"  class="btn btn-warning btn-lg glow">CONTACT ME</button> </Link>
-            <Link to="/about"> <button id="button" type="button"  class="btn btn-warning btn-lg glow">SEE MY RESUME</button> </Link>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">css3</p>
+              <div class="progress-con">
+                <p class="prog-text">95%</p>
+                <div class="progress">
+                  <span style="width: 95%;" class="css"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">javascript</p>
+              <div class="progress-con">
+                <p class="prog-text">75%</p>
+                <div class="progress">
+                  <span style="width: 75%;" class="js"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">ReactJS</p>
+              <div class="progress-con">
+                <p class="prog-text">75%</p>
+                <div class="progress">
+                  <span style="width: 60%;" class="react"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">NodeJS</p>
+              <div class="progress-con">
+                <p class="prog-text">87%</p>
+                <div class="progress">
+                  <span style="width: 87%;" class="node"></span>
+                </div>
+              </div>
+            </div>
+            <div class="progress-bar">
+              <p class="prog-title">Core Java</p>
+              <div class="progress-con">
+                <p class="prog-text">70%</p>
+                <div class="progress">
+                  <span style="width: 70%;" class="java"></span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="Skill-button">
+            <button>More Skills</button>
           </div>
         </div>
-        <div class="avatarPart">
-          <img src="./IMG20240608155036.jpg" class="avatar">
+      </div>
+    </section>
+    <!-- Project Section -->
+    <section id="Project" class="ProjectSection">
+      <div class="Project">
+        <div class="ProjectHeading">
+          <h1>My <span>Projects</span></h1>
+        </div>
+        <div class="CardSection">
+          <div class="card">
+            <img id="imageSize" src="calculator.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Calculator</h5>
+              <p class="card-text">I have created a Simple Calculator by using HTML,CSS,Bootstrap And JavaScript This
+                program uses user input to perform arithmetic operations like addition, subtraction, division,
+                multiplication, and modulo of two numbers. It then outputs the result of the computation. And I use js
+                property EventListners for click button. </p>
+              <a href="#" class="btn btn-primary">Project Link</a>
+            </div>
+          </div>
+          <div class="card">
+            <img id="imageSize" src="./TicTac-Toe.png" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tic-Tac-Toe Game</h5>
+              <p class="card-text">The overlay in this game includes elements for displaying the winner and a restart
+                button, allowing a better user experience.CSS properties like border-radius and padding can be used to
+                adjust the shape and spacing of buttons,allowing for more control over the design of the game.Java
+                Script properties like Event Listner can be used for click start button, allowing for more control over
+                the run game I apply the Event Delegation for click multiple grids and more,CSS and JS</p>
+              <a href="" class="btn btn-primary">Project Link</a>
+            </div>
+          </div>
+          <div class="card">
+            <img id="imageSize" src="./netflix.webp" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Netflix Clone</h5>
+              <p class="card-text">I have created a Netflix clone  project is a web application developed by using HTML,
+                CSS, aiming to replicate the user interface and some features of the popular streaming service, Netflix. Let’s break down the project into its key components and functionalities. This project is implemented using a combination of three fundamental
+                web technologies:
+              </p>
+              <a href="#" class="btn btn-primary">Project Link</a>
+            </div>
+          </div>
+          <div class="card">
+            <img id="imageSize" src="./youtube.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">YouTube Clone</h5>
+              <p class="card-text">I have created a youtube clone by using HTML, CSS, and Bootstrap for a responsive
+                design.The id video section and a class video container define styles for the video section, video
+                containers, descriptions, details, titles, channel names, views, and time.
+              </p>
+              <a href="#" class="btn btn-primary">Project Link</a>
+            </div>
+          </div>
         </div>
       </div>
-    </header>
-    <!-- About Section -->
-     <div class="About-Section">
-      <div class="aboutAvatar">
-        <img id="aboutAvatar" src="./avatarimage.jpg" alt="">
-      </div>
-      <div class="About-part">
-        <h1>About Me</h1>
-        <p id="aboutTextPart">A passionate Web Developer 🚀 having an experience of building Web and Web Application with JavaScript/React/Node.js/React Native and <br> Some other cool libraries and frameworks.</p>
-        <div class="ProfilePart">
-          
+    </section>
+
+    <!-- Contact Me Section -->
+    <section id="Contact" class="ContactSection">
+      <div class="container">
+        <div class="sec-title">
+          <div class="title">Contact <span style="color: #0ef;">Us</span></div>
         </div>
-       </div>
-     </div>
-     
+        <div class="inner-container">
+          <div class="row clearfix">
+            <div class="form-column col-md-8 col-sm-12 col-xs-12">
+              <div class="inner-column">
+                <div class="contact-form">
+                  <form method="post" action="sendemail.php" id="contact-form">
+                    <div class="row clearfix">
+                      <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                        <input type="text" name="name" value="" placeholder="Name" required />
+                      </div>
+                      <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                        <input type="email" name="email" value="" placeholder="Email" required />
+                      </div>
+                      <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                        <input type="text" name="subject" value="" placeholder="Subject" required />
+                      </div>
+                      <div class="form-group col-md-6 col-sm-6 co-xs-12">
+                        <input type="text" name="phone" value="" placeholder="Phone" required />
+                      </div>
+                      <div class="form-group col-md-12 col-sm-12 co-xs-12">
+                        <textarea name="message" placeholder="Massage"></textarea>
+                      </div>
+                      <div class="form-group col-md-12 col-sm-12 co-xs-12">
+                        <button type="submit" class="theme-btn btn-style-one">Send Now</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="info-column col-md-4 col-sm-12 col-xs-12">
+              <div class="inner-column">
+                <h2>Contact Info</h2>
+                <ul class="list-info">
+                  <li> <span>Address: </span> Gwalior, Madhya Pradesh</li>
+                  <li> <span>Email: </span><i class="far fa-envelope"></i>abc@gmail.com</li>
+                  <li> <span>Phone: </span><i class="fas fa-phone"></i>8956415263</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="footerSection">
+      <div class="footSection">
+        <p>
+          I am a Web developer with one years of professional experience specializing in web development, project
+          management and quality assurance testing. Adept at coordinating <span id="span">effectively with development
+            teams, clients,
+            and non-technical stakeholders to execute complex web development projects. And proficient in front-end
+            technologies,</span> <span id="span2">including HTML5, CSS3, JavaScript, and various frameworks such as
+            React, and Node.js.</span>
+        </p>
+        <div class="footerSocial">
+          <h4>Follow On</h4>
+          <img id="github" src="./githublogo.png" alt="">
+          <img id="linkedin" src="./LinkedInlogo.webp" alt="">
+          <img id="twitter" src="./twitterlogo.webp" alt="">
+          <img id="facebook" src="./facebooklogo.webp" alt="">
+          <h6 class="h6Content">All Rights Reserved. Copyright © Arya Private Ltd</h6>
+        </div>
+        <br>
+      </div>
+
+    </footer>
   </main>
 </body>
 
